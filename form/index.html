@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".menu-icon").addEventListener("click", () => {
+                document.querySelector(".main-menu").classList.toggle("menu-show");
+            });
+        });
+    </script>
+
+</head>
+
+<body class="form">
+    <header>
+            <div class="main-menu">
+              <div class="menu-icon"><svg viewbox="0 0 60 60">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+              </svg></div>
+            <nav>
+                  <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a>Form</a></li>
+                  </ul>
+              </div>
+            </nav>
+          </header>
+
+    <main>
+        <section>
+            <h2>Lufia II Survey</h2>
+
+            <img class="svg" src="../images/formsvg.png" alt="formsvg">
+
+            <form class="formPage">
+              <label for="name">Full Name:</label>
+              <input type="text" name="name" id="name" required>
+ 
+              <label for="email">Email Address:</label>
+              <input type="email" name="email" id="email" required>
+          
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" id="phone">
+          
+              <label for="month">Birthday:</label>
+              <input type="month" name="month" id="month">
+          
+              <fieldset>
+                <legend>Which of the following feelings did you have while playing the game? (Check all that apply)</legend>
+          
+                <input type="checkbox" id="frustrated" name="feelings" value="frustrated">
+                <label for="frustrated">Frustrated</label>
+          
+                <input type="checkbox" id="mario" name="feelings" value="mario">
+                <label for="mario">I Should Just Stick to Mario Kart</label>
+          
+                <input type="checkbox" id="total" name="feelings" value="total">
+                <label for="total">I Saw The Total Defeat Screen Too Much</label>
+          
+                <input type="checkbox" id="blueMimic" name="feelings" value="blueMimic">
+                <label for="blueMimic">The Blue Mimic Killed Me and I Lost Everything...</label>
+          
+                <input type="checkbox" id="love" name="feelings" value="love">
+                <label for="love">Love The Game!</label>
+          
+                <input type="checkbox" id="absolutelyEnraged" name="feelings" value="absolutelyEnraged">
+                <label for="absolutelyEnraged">Absolutely Enraged!</label>
+
+                <input type="checkbox" id="threw" name="feelings" value="threw">
+                <label for="threw">I threw the Super Nintendo</label>
+
+              </fieldset>
+          
+              <fieldset>
+                <legend>Would you play the game again?</legend>
+          
+                <input type="radio" name="play" id="100" value="100">
+                <label for="100">100%</label>
+          
+                <input type="radio" name="play" id="blister" value="blister">
+                <label for="blister">Only if I had a blister from Street Fighter</label>
+          
+                <input type="radio" name="play" id="dance" value="dance">
+                <label for="dance">I'd rather be lame and play Just Dance</label>
+          
+                <input type="radio" name="play" id="cave" value="cave">
+                <label for="cave">The Ancient Cave ruined me and I will never <br> play this game AGAIN!</label>
+              </fieldset>
+          
+              <!-- the placeholder attribute appears when no text is present. For accessibilty reasons, don't use a placeholder instead of a label  -->
+              <label for="comment">Additional Comments:</label>
+              <textarea name="comment" id="comment" rows="10" placeholder="place comment here"></textarea>
+          
+              <!-- You will often see <input type="submit"> instead of <button type="submit">. They are the same functionally, but <button> is newer and more easily styled.    -->
+              <button class="button converse" type="submit">Submit</button>
+          
+            </form>
+          </section>
+
+        <div class="loader"></div>
+    </main>
+</body>
+
+</html>

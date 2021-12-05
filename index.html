@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--My Website-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lufia II</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+    document.querySelector(".main-menu").classList.toggle("menu-show");
+  });
+});
+
+  </script>
+
+</head>
+
+<body class="main">
+  <header>
+    <div class="main-menu">
+      <div class="menu-icon"><svg viewbox="0 0 60 60">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg></div>
+    <nav>
+          <ul>
+            <li><a>Home</a></li>
+            <li><a href="about/">About</a></li>
+            <li><a href="form/">Form</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="heroImage">
+    <picture>
+      <source srcset="images/hero-1600.jpg" media="(min-width: 901px)">
+      <source srcset="images/hero-900.jpg" media="(min-width: 501px)">
+      <source srcset="images/hero-600.jpg" media="(max-width: 500px)">
+      <img src="images/hero-900.jpg" alt="SNES image">
+    </picture>
+    <div class="heroText">
+      <h1>Lufia II: Rise <br> of the Sinstrals</h1>
+      <p>Priorities😎</p>
+    </div>
+  </div>
+
+  <main>
+    <article class="panel">
+      <div class="text-wrapper left">
+        <h2>Storyline</h2>
+        <p>The game is a prequel to Lufia & the Fortress of Doom. It follows the story of the first main character's
+          ancestor, Maxim, and explains the origins of the war between mankind and a group of gods called the
+          Sinistrals.</p>
+
+        <div>
+          <a class="button converse">Learn More</a>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="images/Lufia_II.jpg" alt="Lufia II Picture" width="600" loading="lazy">
+      </div>
+    </article>
+
+
+    <article class="panel">
+      <div class="text-wrapper">
+        <h2>Gades: The Impossible Boss</h2>
+        <p>Very difficult to defeat but possible. Most people beat him in the 30's but I can do it as low as level
+          23 or 24</p>
+        <div>
+          <a class="button converse">More Info</a>
+
+        </div>
+      </div>
+      <div class="image-wrapper left">
+        <img src="images/Gades_LufiaII.gif" alt="Gades Picture" width="400" loading="lazy">
+      </div>
+    </article>
+
+    <h2>Stats</h2>
+    <p>Each of these stats may increase after leveling up:</p>
+    <dl>
+      <dt>HP</dt>
+      <dd>Health Points. Once it reaches 0, you die </dd>
+      <dt>MP</dt>
+      <dd>Magic Points. Once it reaches reaches, cannot cast a spell</dd>
+      <dt>ATP</dt>
+      <dd>Attack Power</dd>
+      <dt>DFP</dt>
+      <dd>Defense Power </dd>
+      <dt>STR</dt>
+      <dd>Natural Strength Points of Character</dd>
+      <dt>AGL</dt>
+      <dd>Agility Points</dd>
+      <dt>INT</dt>
+      <dd>Intelligence Points (Strength of Magic)</dd>
+      <dt>GUT</dt>
+      <dd>How Brave your Character Is (mainly affects capsule monsters if they will run or not)</dd>
+      <dt>MGR</dt>
+      <dd>Magic Resistence (Defense for Magic)</dd>
+    </dl>
+
+
+    <aside>
+      <h3> <strong>Characters </strong></h3>
+      <p>These are the characters in Lufia II:</p>
+      <ol>
+        <li>Maxim (can also imput your own name)</li>
+        <li>Tia</li>
+        <li>Guy</li>
+        <li>Selan</li>
+        <li>Dekar</li>
+        <li>Lexis</li>
+        <li>Artea</li>
+      </ol>
+    </aside>
+
+  </main>
+  <div class="cards">
+    <div class="card">
+      <a href="#">
+        <img src="images/lufia2card1.png" alt="Lufia 2 Card 1">
+        <div class="content">
+          <h3>Opening Screen</h3>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#">
+        <img src="images/lufia2card2.jpg" alt="Lufia 2 Card 2">
+        <div class="content">
+          <h3>Game Cartridge</h3>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#">
+        <img src="images/lufia2card3.jpg" alt="Lufia 2 Card 3">
+        <div class="content">
+          <h3>Ancient Cave</h3>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#">
+        <img src="images/lufia2card4.jpg" alt="Lufia 2 Card 4">
+        <div class="content">
+          <h3>Red Jelly Fight</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+  <footer>
+    <p>Tribute to My Papa</p>
+  </footer>
+</body>
+
+</html>
